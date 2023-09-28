@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Shopping List</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Shopping List</h1>
+        <input type="text" id="input-item-name" placeholder="Item Name" data-ns-test="item-name">
+        <input type="text" id="input-item-price" placeholder="Item Price" data-ns-test="item-price">
+        <button id="btn">Add</button>
+        <table>
+            <thead>
+                <tr>
+                    <th data-ns-test="item-name">Name</th>
+                    <th data-ns-test="item-price">Price</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+                <!-- Initial empty row for total -->
+                <!-- <tr>
+                    <td>apple</td>
+                    <td id="total">10</td>
+                </tr> -->
+                <tr>
+                    <td>Total</td>
+                    <td id="total">0</td>
+                </tr>
+            </tbody>
+        </table>
+        <div data-ns-test="grandTotal" id="grand-total">0</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
